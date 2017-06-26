@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>高贝尔云首页</title>
+
+    <!--初始化css-->
+    <link rel="stylesheet" href="css/box.css">
+    <!--自定义css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--移动端轮播图css-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--阿里icon-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+
+    <!--屏幕检测，调整根html font-size大小，对屏幕模块进行等比缩放-->
+    <script>
+        (function (win) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            var tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 640) { // 最大宽度
+                    width = 640;
+                }
+                var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            win.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            refreshRem();
+
+        })(window);
+    </script>
+
+    <!--require.js 异步加载-->
+    <script src="js/require.js" defer async="true"></script>
+    <!--require.js 主模块main-->
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+
+
+<!--header-->
+<header class="ix-header">
+
+    <div class="clearfix hd-nav">
+
+        <a href="javascript:window.history.back();" class="hd-left">
+            <i class="icon iconfont icon-xiangzuo1"></i>
+        </a>
+
+        <a href="" class="hd-center">
+            虚拟主机
+        </a>
+
+    </div>
+
+</header>
+<!--header end-->
+
+<!--vt-layer-0-->
+<div class="vt-layer-0">
+    <div class="ecs-overview clearfix">
+        <div class="ecs-overview-left">
+            <i class="icon iconfont icon-yunxunizhuji"></i>
+        </div>
+
+        <div class="ecs-overview-right">
+            <h3 class="ecs-title">云虚拟主机</h3>
+            <p class="ecs-subtitle">
+                <img src="images/vliwu.png">
+                <a href="" target="_blank"><b>独享虚拟主机，包年优惠再送.xin域名！</b></a>
+            </p>
+            <p class="ecs-overview-desc ecs-desc-ml">独立IP易推广、不限流量更快速，预装环境送DB，备案多久送多久；</p>
+        </div>
+    </div>
+</div>
+
+<div class="vt-layout-1 card-box">
+    <article class="config">
+        <h3>热销配置推荐</h3>
+
+
+        <ul class="vt-tab-list1 layout">
+            <li class="layout-box active">经济型虚拟主机</li>
+            <li class="layout-box">全能型虚拟主机</li>
+        </ul>
+
+
+        <div class="vt-tab-dom1 active">
+
+            <div class="content">
+
+                <div class="ecs-tips">
+                    <i class="icon iconfont icon-zhuyi"></i>
+                    <p class="ecs-tips-text">云虚拟主机支持版本间升级及数据自动迁移功能，您可以根据需要选择配置。</p>
+                </div>
+
+
+                <div class="list">
+
+                    <div class="box">
+                        <div class="left">
+                            <div class="title-bar clearfix">
+                                <h5 class="product-type">共享经济版</h5>
+                                <div class="sub-title-bar">
+                                    <span class="sub-title">适合个人及开发者建站</span>
+                                </div>
+                            </div>
+                            <p class="config-desc">网页空间：2G&nbsp;&nbsp;单月流量：30G<br>数据库：200M&nbsp;&nbsp;内存：共享<br>CPU：共享&nbsp;&nbsp;&nbsp;共享IP
+                            </p>
+                        </div>
+                        <a class="right" href="virtual_select_config.html">
+                            <div class="price-wrapper">
+                                <p class="price">
+                                    <span>298元/年</span>
+                                </p>
+                                <span class="buy-button-text">购买</span>
+                                <div class="discount-txt">送1月备案时长</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="list">
+
+                    <div class="box">
+                        <div class="left">
+                            <div class="title-bar">
+                                <h5 class="product-type">独享普惠版</h5>
+                                <div class="sub-title-bar">
+                                    <span class="sub-title">适合初创型中小企业网站</span>
+                                    <span class="tag-icon tag-icon-"></span>
+                                </div>
+                            </div>
+                            <p class="config-desc">网页空间：20G&nbsp;&nbsp;单月流量：不限<br>数据库：1G&nbsp;&nbsp;&nbsp;&nbsp;独享内存：1G<br>独享CPU：1核&nbsp;&nbsp;&nbsp;独立IP
+                            </p>
+                        </div>
+                        <a class="right" href="virtual_select_config.html">
+                            <div class="price-wrapper">
+                                <p class="price">
+                                    <span>75元/月</span>
+
+                                </p>
+                                <span class="buy-button-text">购买</span>
+                                <div class="discount-txt">包年更优惠</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="list">
+
+                    <div class="box">
+                        <div class="left">
+                            <div class="title-bar">
+                                <h5 class="product-type">独享专业版</h5>
+                                <div class="sub-title-bar">
+                                    <span class="sub-title">适合企业、政府官网、社区网站</span>
+                                    <span class="tag-icon tag-icon-"></span>
+                                </div>
+                            </div>
+                            <p class="config-desc">网页空间：50G&nbsp;&nbsp;单月流量：不限<br> 数据库：1G&nbsp;&nbsp;&nbsp;&nbsp;独享内存：2G<br>
+                                独享CPU：1核&nbsp;&nbsp;&nbsp;独立IP</p>
+                        </div>
+                        <a class="right" href="virtual_select_config.html">
+                            <div class="price-wrapper">
+                                <p class="price">
+                                    <span>115元/月</span>
+
+                                </p>
+                                <span class="buy-button-text">购买</span>
+                                <div class="discount-txt">包年更优惠</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!--全能型虚拟主机-->
+        <div class="vt-tab-dom1">
+            <div class="content">
+
+                <div class="ecs-tips">
+                    <i class="icon iconfont icon-zhuyi"></i>
+                    <p class="ecs-tips-text">云虚拟主机支持版本间升级及数据自动迁移功能，您可以根据需要选择配置。</p>
+                </div>
+
+
+                <div class="list">
+
+                    <div class="box">
+                        <div class="left">
+                            <div class="title-bar clearfix">
+                                <h5 class="product-type">全能系列经济版</h5>
+                                <div class="sub-title-bar">
+                                    <span class="sub-title">适合个人及开发者建站</span>
+                                </div>
+                            </div>
+                            <p class="config-desc">网页空间：2G&nbsp;&nbsp;单月流量：30G<br>数据库：200M&nbsp;&nbsp;内存：共享<br>CPU：共享&nbsp;&nbsp;&nbsp;共享IP
+                            </p>
+                        </div>
+                        <a class="right" href="virtual_select_config.html">
+                            <div class="price-wrapper">
+                                <p class="price">
+                                    <span>298元/年</span>
+                                </p>
+                                <span class="buy-button-text">购买</span>
+                                <div class="discount-txt">送1月备案时长</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="list">
+
+                    <div class="box">
+                        <div class="left">
+                            <div class="title-bar">
+                                <h5 class="product-type">全能系列标准版</h5>
+                                <div class="sub-title-bar">
+                                    <span class="sub-title">适合初创型中小企业网站</span>
+                                    <span class="tag-icon tag-icon-"></span>
+                                </div>
+                            </div>
+                            <p class="config-desc">网页空间：20G&nbsp;&nbsp;单月流量：不限<br>数据库：1G&nbsp;&nbsp;&nbsp;&nbsp;独享内存：1G<br>独享CPU：1核&nbsp;&nbsp;&nbsp;独立IP
+                            </p>
+                        </div>
+                        <a class="right" href="virtual_select_config.html">
+                            <div class="price-wrapper">
+                                <p class="price">
+                                    <span>75元/月</span>
+
+                                </p>
+                                <span class="buy-button-text">购买</span>
+                                <div class="discount-txt">包年更优惠</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="list">
+
+                    <div class="box">
+                        <div class="left">
+                            <div class="title-bar">
+                                <h5 class="product-type">全能系列增强版</h5>
+                                <div class="sub-title-bar">
+                                    <span class="sub-title">适合企业、政府官网、社区网站</span>
+                                    <span class="tag-icon tag-icon-"></span>
+                                </div>
+                            </div>
+                            <p class="config-desc">网页空间：50G&nbsp;&nbsp;单月流量：不限<br> 数据库：1G&nbsp;&nbsp;&nbsp;&nbsp;独享内存：2G<br>
+                                独享CPU：1核&nbsp;&nbsp;&nbsp;独立IP</p>
+                        </div>
+                        <a class="right" href="virtual_select_config.html">
+                            <div class="price-wrapper">
+                                <p class="price">
+                                    <span>115元/月</span>
+
+                                </p>
+                                <span class="buy-button-text">购买</span>
+                                <div class="discount-txt">包年更优惠</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="list">
+
+                    <div class="box">
+                        <div class="left">
+                            <div class="title-bar">
+                                <h5 class="product-type">全能系列豪华版</h5>
+                                <div class="sub-title-bar">
+                                    <span class="sub-title">适合企业、政府官网、社区网站</span>
+                                    <span class="tag-icon tag-icon-"></span>
+                                </div>
+                            </div>
+                            <p class="config-desc">网页空间：50G&nbsp;&nbsp;单月流量：不限<br> 数据库：1G&nbsp;&nbsp;&nbsp;&nbsp;独享内存：2G<br>
+                                独享CPU：1核&nbsp;&nbsp;&nbsp;独立IP</p>
+                        </div>
+                        <a class="right" href="virtual_select_config.html">
+                            <div class="price-wrapper">
+                                <p class="price">
+                                    <span>115元/月</span>
+
+                                </p>
+                                <span class="buy-button-text">购买</span>
+                                <div class="discount-txt">包年更优惠</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </article>
+</div>
+
+
+<div class="card-box vt-layout-3">
+
+    <ul class="vt-tab-list3 layout">
+        <li class="layout-box active">产品功能</li>
+        <li class="layout-box">应用支持</li>
+    </ul>
+
+    <div class="vt-tab-dom3 active one">
+        <article class="advant">
+            <p class="advant-title">产品优势</p>
+            <p class="desc-text">虚机市场占有率第一，20年品质保证</p>
+
+            <section class="stable s-indent">
+                <div class="small-icons item-icon">
+                    <img src="images/gber_vicon1.png">
+                </div>
+                <h5>稳定:99.999%的服务、数据可靠性</h5>
+                <div class="content">
+                    自动宕机迁移、云磁盘数据可靠性不低于99.999% 独享CPU、独享内存、独享带宽，不受干扰
+                </div>
+            </section>
+
+            <section class="stable s-indent">
+                <div class="small-icons item-icon">
+                    <img src="images/gber_vicon2.png">
+                </div>
+                <h5>安全：云端安全防御</h5>
+                <div class="content">
+                    提供基于云端的DDOS入侵、防御及网站安全防御服务 定期多份数据快照备份，在线备份恢复数据库
+                </div>
+            </section>
+
+            <section class="stable s-indent">
+                <div class="small-icons item-icon">
+                    <img src="images/gber_vicon3.png">
+                </div>
+                <h5>快速：5A机房，BGP骨干网络</h5>
+                <div class="content">
+                    多线BGP骨干网络，多线接入，全网覆盖（电信、联通和移动等主流运营商全部接入）
+                </div>
+            </section>
+
+            <section class="stable s-indent">
+                <div class="small-icons item-icon">
+                    <img src="images/gber_vicon4.png">
+                </div>
+                <h5>易用：预装网站环境及数据库</h5>
+                <div class="content">
+                    免费赠1G独立数据库 与虚机管理方式相同，无需服务器运维人员，建站用户首选
+                </div>
+            </section>
+        </article>
+
+
+        <div class="module-wrap J_tb_lazyload">
+
+            <p class="app-title">产品功能</p>
+
+            <div class="product-table">
+
+                <ul class="product-list">
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>系列对比</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>共享系列虚机</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>独享系列虚机</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>网页空间</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>2G-15G</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>20G-150G</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>流量</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>30G-150G</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>不限流量</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>IP地址</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>共享IP</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>独享IP（更易做推广）</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>CPU</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>共享</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>独享（运行速度更快）</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>内存</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>共享</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>独享（运行速度更快）</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>并发连接数</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>150个</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>不限</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>域名绑定数量</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>30-90个</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>不限</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="product-table">
+
+            <ul class="product-list">
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>产品参数-组件支持</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Windows</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Linux</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>邮件组件</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>CDOSYS CDO.Message</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Fsockopen函数</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>网页动画播放器</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Shock Wave、Flash</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Shock Wave、Flash</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>支持音频文件</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>MIDI、MP3</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>MIDI、MP3</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>支付加密组件</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>MD5支付组件</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Zend3.3</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>URL转移模块</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>UrlrewriteIIS7</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Urlrewrite</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span><a target="_blank" href="//wanwang.aliyun.com/hosting">去PC版了解更多组件参数</a></span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="product-table">
+
+            <ul class="product-list">
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>控制面板功能</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Windows</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Linux</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>主机域名绑定</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>√</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>√</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>备份恢复</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>√</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>√</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>网站搬家</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>√</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>√</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>流量统计报告</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>√</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>√</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>网站健康检查</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>√</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>√</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>文件管理</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>压缩/解压缩/删除</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>压缩/解压缩/删除</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>语言版本设置</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>.NET1.1/2.0/3.5/4.0 切换</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>PHP 5.2，5.3 ，5.4， 5.5切换</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="product-table">
+
+            <ul class="product-list">
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>其他功能</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>版本间升级：系统自动迁移数据</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>更换操作系统：Windows 与Linux互换</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>空间扩容</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>购买流量</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>自动续费设置</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="vt-tab-dom3 one">
+        <div class="product-table">
+
+            <ul class="product-list">
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span></span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Windows</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Linux</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>博客</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Z-Blog等</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>WordPress|Z-Blog等</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>论坛</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Discuz！NT| SiteServer BBS等</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Discuz|Phpwind| UCenter Home等</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>内容管理系统</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>动易CMS</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>织梦CMS|PHPCMS| Joomla!|帝国等</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="product-li">
+                    <ul class="product-low-list">
+
+                        <li class="product-low-item">
+                            <span>网上商城</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>Hishop| SiteServerB2C |动易B2C等</span>
+
+                        </li>
+
+                        <li class="product-low-item">
+                            <span>ShopEX|Ecshop等</span>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

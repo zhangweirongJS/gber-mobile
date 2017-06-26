@@ -1,0 +1,84 @@
+$divide: 10;
+$pswWidth: 375;
+$ppr: 375px/$divide/1rem; // 定义单位
+
+/*rem*/
+@mixin toRem($property, $values...) {
+  $max: length($values);
+  $remValues: '';
+  @for $i from 1 through $max {
+    $value: nth($values, $i) * $divide / $pswWidth;
+    $remValues: #{$remValues + $value}rem;
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+  #{$property}: $remValues;
+}
+
+/*border*/
+@mixin bor($bor-color) {
+  border: 1px solid $bor-color;
+}
+
+@mixin bor-lt($bor-color) {
+  border-left: 1px solid $bor-color;
+}
+
+@mixin bor-rt($bor-color) {
+  border-right: 1px solid $bor-color;
+}
+
+@mixin bor-top($bor-color) {
+  border-top: 1px solid $bor-color;
+}
+
+@mixin bor-bom($bor-color) {
+  border-bottom: 1px solid $bor-color;
+}
+
+/*border end*/
+
+.fl-layout {
+  width: 100%;
+  height: 100%;
+
+  &:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+
+  .fl-layout-box2 {
+    width: (10/2)*10%;
+    float: left;
+    overflow: hidden;
+  }
+
+  .fl-layout-box3 {
+    width: (10/3)*10%;
+    float: left;
+    overflow: hidden;
+  }
+
+  .fl-layout-box4 {
+    width: (10/4)*10%;
+    float: left;
+    overflow: hidden;
+  }
+
+  .fl-layout-box5 {
+    width: (10/5)*10%;
+    float: left;
+    overflow: hidden;
+  }
+
+  .fl-layout-box6 {
+    width: (10/5)*10%;
+    float: left;
+    overflow: hidden;
+  }
+}
+

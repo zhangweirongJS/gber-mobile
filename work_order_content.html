@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>控制台 </title>
+
+    <!--初始化css-->
+    <link rel="stylesheet" href="css/box.css">
+    <!--自定义css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--移动端轮播图css-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--阿里icon-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+
+    <!--屏幕检测，调整根html font-size大小，对屏幕模块进行等比缩放-->
+    <script>
+        (function (win) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            var tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 640) { // 最大宽度
+                    width = 640;
+                }
+                var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            win.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            refreshRem();
+
+        })(window);
+    </script>
+
+    <!--require.js 异步加载-->
+    <script src="js/require.js" defer async="true"></script>
+    <!--require.js 主模块main-->
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+
+<!--header-->
+<header class="ix-header">
+
+    <div class="clearfix hd-nav">
+
+        <a href="javascript:window.history.back();" class="hd-left">
+            <i class="icon iconfont icon-xiangzuo1"></i>
+        </a>
+
+        <a href="" class="hd-center">
+            工单947BRRX
+        </a>
+
+    </div>
+
+</header>
+<!--header end-->
+
+<ul class="wt-layout-1">
+    <li>
+        <span class="wk-view-left">我</span>
+        <div class="wk-view-right">
+            <p>问题描述：阿萨德喝酒啊还是觉得哈苏德家啊还是大家啊还是的啊本赛季的话把教师代表接撒不会的家啊所包含的家</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+    <li>
+        <span class="wk-view-left xitong">系统</span>
+        <div class="wk-view-right">
+            <p>您的问题我们已经收到</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+
+    <li>
+        <span class="wk-view-left">我</span>
+        <div class="wk-view-right">
+            <p>问题描述：阿萨德喝酒啊还是觉得哈苏德家啊还是大家啊还是的啊本赛季的话把教师代表接撒不会的家啊所包含的家</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+    <li>
+        <span class="wk-view-left xitong">系统</span>
+        <div class="wk-view-right">
+            <p>您的问题我们已经收到</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+
+    <li>
+        <span class="wk-view-left">我</span>
+        <div class="wk-view-right">
+            <p>问题描述：阿萨德喝酒啊还是觉得哈苏德家啊还是大家啊还是的啊本赛季的话把教师代表接撒不会的家啊所包含的家</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+    <li>
+        <span class="wk-view-left xitong">系统</span>
+        <div class="wk-view-right">
+            <p>您的问题我们已经收到</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+
+    <li>
+        <span class="wk-view-left">我</span>
+        <div class="wk-view-right">
+            <p>问题描述：阿萨德喝酒啊还是觉得哈苏德家啊还是大家啊还是的啊本赛季的话把教师代表接撒不会的家啊所包含的家</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+    <li>
+        <span class="wk-view-left xitong">系统</span>
+        <div class="wk-view-right">
+            <p>您的问题我们已经收到</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+
+    <li>
+        <span class="wk-view-left">我</span>
+        <div class="wk-view-right">
+            <p>问题描述：阿萨德喝酒啊还是觉得哈苏德家啊还是大家啊还是的啊本赛季的话把教师代表接撒不会的家啊所包含的家</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+    <li>
+        <span class="wk-view-left xitong">系统</span>
+        <div class="wk-view-right">
+            <p>您的问题我们已经收到</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+
+    <li>
+        <span class="wk-view-left">我</span>
+        <div class="wk-view-right">
+            <p>问题描述：阿萨德喝酒啊还是觉得哈苏德家啊还是大家啊还是的啊本赛季的话把教师代表接撒不会的家啊所包含的家</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+    <li>
+        <span class="wk-view-left xitong">系统</span>
+        <div class="wk-view-right">
+            <p>您的问题我们已经收到</p>
+            <span class="wk-time"><i class="icon iconfont icon-shijian"></i> 2017-12-45</span>
+        </div>
+    </li>
+</ul>
+
+<!--footer -->
+<div id="footer-view">
+    <footer class="footer">
+
+        <a class="active" href="index.html">
+            <i class="icon iconfont icon-home"></i>
+            <p>高贝尔云</p>
+        </a>
+
+        <a href="console.html">
+            <i class="icon iconfont icon-yousuyun1"></i>
+            <p>控制台</p>
+        </a>
+
+        <a href="work_order.html">
+            <i class="icon iconfont icon-gongdan"></i>
+            <p>工单</p>
+        </a>
+
+        <a href="user.html">
+            <i class="icon iconfont icon-wo"></i>
+            <p>我的</p>
+        </a>
+
+    </footer>
+</div>
+<!--footer end-->
+
+</body>
+</html>

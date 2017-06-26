@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>高贝尔云首页</title>
+
+    <!--初始化css-->
+    <link rel="stylesheet" href="css/box.css">
+    <!--自定义css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--移动端轮播图css-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--阿里icon-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+
+    <!--屏幕检测，调整根html font-size大小，对屏幕模块进行等比缩放-->
+    <script>
+        (function (win) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            var tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 640) { // 最大宽度
+                    width = 640;
+                }
+                var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            win.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            refreshRem();
+
+        })(window);
+    </script>
+
+    <!--require.js 异步加载-->
+    <script src="js/require.js" defer async="true"></script>
+    <!--require.js 主模块main-->
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+
+
+<!--header-->
+<header class="ix-header">
+
+    <div class="clearfix hd-nav">
+
+        <a href="javascript:window.history.back();" class="hd-left">
+            <i class="icon iconfont icon-xiangzuo1"></i>
+        </a>
+
+        <a href="" class="hd-center">
+            高贝尔企业邮箱
+        </a>
+
+    </div>
+
+</header>
+<!--header end-->
+
+<div class="ql-layout-0">
+    <div class="ecs-overview-wrapper">
+        <div class="ecs-overview">
+            <div class="ecs-overview-left">
+                <i class="icon iconfont icon-youxiang"></i>
+            </div>
+
+            <div class="ecs-overview-right">
+                <h3 class="ecs-title">企业邮箱</h3>
+                <p class="ecs-subtitle">
+                    <img src="images/vliwu.png">
+                    <a href="" target="_blank">帐号越多越优惠，15帐号起95折</a>
+
+
+                </p>
+                <p class="ecs-overview-desc ecs-desc-ml">
+                    已服务超过2,000,000用户，安全稳固，全球畅游，绿色可靠，垃圾邮件过滤率大于99.99%，误判率小于
+                    0.01%；邮件病毒查杀率大于99.99%，用户感觉度小于0.01%。
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ql-layout-1 card-box">
+    <article class="config">
+        <h3>热销配置推荐</h3>
+        <div class="content">
+
+
+            <div class="list">
+
+                <div class="box">
+                    <div class="left">
+                        <div class="title-bar">
+                            <h5 class="product-type">标准版</h5>
+                            <div class="sub-title-bar">
+                                <span class="sub-title">按需购买，经济实惠</span>
+                                <span class="tag-icon tag-icon-"></span>
+                            </div>
+                        </div>
+                        <p class="config-desc">起售帐号数：5<br>帐号容量：无限<br>个人网盘：5G/帐号<br>共享网盘：20G</p>
+                    </div>
+                    <a class="right" href="q_email_config.html">
+                        <div class="price-wrapper">
+                            <p class="price">
+                                <span>200元起</span>
+
+                            </p>
+                            <span class="buy-button-text">购买</span>
+                            <div class="discount-txt">按年购买更优惠</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="list">
+
+                <div class="box">
+                    <div class="left">
+                        <div class="title-bar">
+                            <h5 class="product-type">集团版</h5>
+                            <div class="sub-title-bar">
+                                <span class="sub-title">独立IP，多域管理</span>
+                                <span class="tag-icon tag-icon-"></span>
+                            </div>
+                        </div>
+                        <p class="config-desc">起售帐号数：100<br>帐号容量：无限<br>个人网盘：5G/帐号<br>共享网盘：20G/域</p>
+                    </div>
+                    <a class="right" href="q_email_config.html">
+                        <div class="price-wrapper">
+                            <p class="price">
+                                <span>3167元起</span>
+                            </p>
+                            <span class="buy-button-text">购买</span>
+                            <div class="discount-txt">按年购买更优惠</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </article>
+</div>
+
+
+
+
+
+<div class="card-box ql-layout-3">
+
+    <ul class="ql-tab-list3 layout">
+        <li class="layout-box active">产品优势</li>
+        <li class="layout-box">使用功能</li>
+        <li class="layout-box">管理功能</li>
+    </ul>
+
+    <div class="ql-tab-dom3 active one">
+        <article class="advant">
+            <p class="advant-title">产品优势</p>
+
+
+            <section class="stable s-indent">
+                <div class="small-icons item-icon">
+                    <img src="https://img.alicdn.com/tps/TB1QMVOKXXXXXbwXFXXXXXXXXXX-32-32.png">
+                </div>
+                <h5>安全稳固</h5>
+                <div class="content">
+                    业内唯一一家拥有独立公有云服务的邮件运营商高性能网络架构<br>高可用、无单点故障隐患
+                </div>
+            </section>
+
+            <section class="stable s-indent">
+                <div class="small-icons item-icon">
+                    <img src="https://gw.alicdn.com/tps/TB12vbDJpXXXXalXXXXXXXXXXXX-36-38.png">
+                </div>
+                <h5>全球畅游</h5>
+                <div class="content">
+                    全球云机房，海外多点部署<br>专线链接优化国际链路，实现全球畅邮。
+                </div>
+            </section>
+
+            <section class="stable s-indent">
+                <div class="small-icons item-icon">
+                    <img src="https://gw.alicdn.com/tps/TB1w7uOMpXXXXa5XVXXXXXXXXXX-36-38.png">
+                </div>
+                <h5>绿色可靠</h5>
+                <div class="content">
+                    垃圾邮件过滤率大于99.99%， 判率小于 0.01%<br> 邮件病毒查杀率大于99.99%<br>用户感觉度小于0.01%。
+                </div>
+            </section>
+
+            <section class="stable s-indent">
+                <div class="small-icons item-icon">
+                    <img src="https://gw.alicdn.com/tps/TB1VzS3MpXXXXbPXpXXXXXXXXXX-36-38.png">
+                </div>
+                <h5>专业运营</h5>
+                <div class="content">
+                    中国最早的企业邮箱服务商之一<br>20年专业企业邮箱运营经验<br>服务超过2,000,000用户
+                </div>
+            </section>
+
+
+        </article>
+
+        <div class="module-wrap J_tb_lazyload">
+
+            <p class="app-title">使用功能</p>
+
+            <div class="product-table">
+
+                <ul class="product-list">
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span></span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>标准版</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>集团版</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>起售账号数</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>5</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>100</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>是否支持独立IP</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>×</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>是否支持多域管理</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>×</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>移动客户端</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>IOS，Android</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>IOS，Android</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>多任务模式</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>群邮件、共享网盘、 群任务模块</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>群邮件、共享网盘、 群任务模块</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>网盘</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>个人网盘<br>共享网盘</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>个人网盘<br>共享网盘</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮件撤回</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>全文检索</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>异常登录提醒</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>疑似垃圾件提醒</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>群发单显</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>会话模式</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>同步保存已发送邮件</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>任务</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>文件共享</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮件标签</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="module-wrap J_tb_lazyload">
+
+            <p class="app-title">管理功能</p>
+
+            <div class="product-table">
+
+                <ul class="product-list">
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span></span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>标准版</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>集团版</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮件监控</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>设定监控账号<br>被监控账号</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>设定监控账号<br>被监控账号</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>分级管理员</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>企业回收站</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮箱搬家</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>动态邮件组</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>自定义企业logo</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>登录页设置</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮件组设置</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮件群组</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>成员外发限制</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>全域黑白名单</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>别名管理</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="ql-tab-dom3 one">
+        <div class="module-wrap J_tb_lazyload">
+
+            <p class="app-title">使用功能</p>
+
+            <div class="product-table">
+
+                <ul class="product-list">
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span></span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>标准版</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>集团版</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>起售账号数</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>5</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>100</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>是否支持独立IP</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>×</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>是否支持多域管理</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>×</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>移动客户端</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>IOS，Android</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>IOS，Android</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>多任务模式</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>群邮件、共享网盘、 群任务模块</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>群邮件、共享网盘、 群任务模块</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>网盘</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>个人网盘<br>共享网盘</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>个人网盘<br>共享网盘</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮件撤回</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>全文检索</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>异常登录提醒</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>疑似垃圾件提醒</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>群发单显</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>会话模式</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>同步保存已发送邮件</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>任务</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>文件共享</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮件标签</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ql-tab-dom3 one">
+        <div class="module-wrap J_tb_lazyload">
+
+            <p class="app-title">管理功能</p>
+
+            <div class="product-table">
+
+                <ul class="product-list">
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span></span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>标准版</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>集团版</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮件监控</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>设定监控账号<br>被监控账号</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>设定监控账号<br>被监控账号</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>分级管理员</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>企业回收站</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮箱搬家</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>动态邮件组</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>自定义企业logo</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>登录页设置</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮件组设置</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>邮件群组</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>成员外发限制</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>全域黑白名单</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="product-li">
+                        <ul class="product-low-list">
+
+                            <li class="product-low-item">
+                                <span>别名管理</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                            <li class="product-low-item">
+                                <span>√</span>
+
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>

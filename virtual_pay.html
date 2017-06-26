@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>高贝尔云首页</title>
+
+    <!--初始化css-->
+    <link rel="stylesheet" href="css/box.css">
+    <!--自定义css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--移动端轮播图css-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--阿里icon-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+
+    <!--屏幕检测，调整根html font-size大小，对屏幕模块进行等比缩放-->
+    <script>
+        (function (win) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            var tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 640) { // 最大宽度
+                    width = 640;
+                }
+                var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            win.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            refreshRem();
+
+        })(window);
+    </script>
+
+    <!--require.js 异步加载-->
+    <script src="js/require.js" defer async="true"></script>
+    <!--require.js 主模块main-->
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+
+<!--header-->
+<header class="ix-header">
+
+    <div class="clearfix hd-nav">
+
+        <a href="javascript:window.history.back();" class="hd-left">
+            <i class="icon iconfont icon-xiangzuo1"></i>
+        </a>
+
+        <a href="" class="hd-center">
+            订单确认
+        </a>
+
+    </div>
+
+</header>
+<!--header end-->
+
+<div class="vy-layer-0 order-item">
+    <div class="header"><h3>共享虚拟主机经济版</h3></div>
+    <ul class="config-list">
+        <li>
+            <span class="key">行为：</span>
+            <span class="value">新购</span>
+        </li>
+        <li>
+            <span class="key">数量：</span>
+            <span class="value">1</span>
+        </li>
+        <li>
+            <span class="key">时长：</span>
+            <span class="value"><!-- react-text: 74 -->1<!-- /react-text -->
+                <!-- react-text: 75 -->年<!-- /react-text --></span>
+        </li>
+        <li>
+            <span class="key"><!-- react-text: 78 -->操作系统<!-- /react-text --><!-- react-text: 79 -->：
+                <!-- /react-text --></span>
+            <span class="value">Linux</span>
+        </li>
+        <li>
+            <span class="key"><!-- react-text: 83 -->机房<!-- /react-text --><!-- react-text: 84 -->：
+                <!-- /react-text --></span>
+            <span class="value">华北 2 (北京)</span>
+        </li>
+    </ul>
+</div>
+
+<div class="vy-layer-1 ">
+    <div class="formular">
+        <div class="cell clearfix">
+            <span class="key">订单金额</span>
+            <span class="value"><!-- react-text: 24 -->298.00
+                <!-- /react-text --><!-- react-text: 25 -->元<!-- /react-text --></span>
+        </div>
+        <div class="row-line">
+
+        </div>
+        <div class="cell clearfix">
+            <span class="key">账户可用余额</span>
+            <span class="value"><!-- react-text: 30 -->0
+                <!-- /react-text --><!-- react-text: 31 -->元<!-- /react-text --></span>
+            <span class="symbol"> - </span>
+        </div>
+        <div class="cell clearfix">
+            <span class="key">代金券</span>
+            <span class="value"><!-- react-text: 36 -->0<!-- /react-text -->
+                <!-- react-text: 37 -->元<!-- /react-text --></span>
+            <span class="symbol"> - </span>
+        </div>
+        <div class="cell clearfix">
+            <span class="key">应付金额</span>
+            <span class="value"><!-- react-text: 42 -->298.00
+                <!-- /react-text --><!-- react-text: 43 -->元<!-- /react-text --></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="vy-layer-2 price-confirm">
+    <div class="price-show">
+        <h3>应付款</h3>
+        <p><!-- react-text: 48 -->￥ <!-- /react-text --><!-- react-text: 49 -->298.00<!-- /react-text --></p>
+    </div>
+    <form class="order_form" action="" method="POST">
+        <input type="submit" value="去支付" class="">
+    </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>高贝尔云首页</title>
+
+    <!--初始化css-->
+    <link rel="stylesheet" href="css/box.css">
+    <!--自定义css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--移动端轮播图css-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--阿里icon-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+
+    <!--屏幕检测，调整根html font-size大小，对屏幕模块进行等比缩放-->
+    <script>
+        (function (win) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            var tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 640) { // 最大宽度
+                    width = 640;
+                }
+                var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            win.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            refreshRem();
+
+        })(window);
+    </script>
+
+    <!--require.js 异步加载-->
+    <script src="js/require.js" defer async="true"></script>
+    <!--require.js 主模块main-->
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+
+
+<!--header-->
+<header class="ix-header">
+
+    <div class="clearfix hd-nav">
+
+        <a href="javascript:window.history.back();" class="hd-left">
+            <i class="icon iconfont icon-xiangzuo1"></i>
+        </a>
+
+        <a href="" class="hd-center">
+            域名注册
+        </a>
+
+    </div>
+
+</header>
+<!--header end-->
+
+<!--dw-layout-0-->
+<div class="dw-layout-0">
+    <div class="search-box clearfix">
+
+        <div class="input-dom">
+            <input type="text" placeholder="注域名先查询，请输入域名，如wanwang">
+            <span class="name-btn">.com</span>
+        </div>
+        <div class="button-btn"><i class="icon iconfont icon-sousuo-sousuo"></i></div>
+
+    </div>
+
+    <div class="domain-name-list">
+        <div class="title-list layout">
+            <div class="layout-box2">
+                点击框内任意域名
+            </div>
+            <div class="layout-box">
+                <i class="icon iconfont icon-guanbi1 de-list-close"></i>
+            </div>
+        </div>
+        <ul class="clearfix">
+            <li>.1com</li>
+            <li>.2xin</li>
+            <li>.3as</li>
+            <li>.4asd</li>
+            <li>.5xasdn</li>
+            <li>.6cn</li>
+
+            <li>.7casdm</li>
+            <li>.8xas</li>
+            <li>.9asd</li>
+            <li>.10com</li>
+            <li>.11xasdn</li>
+            <li>.12cn</li>
+
+            <li>.13ad</li>
+            <li>.14xin</li>
+            <li>.15adn</li>
+            <li>.16aom</li>
+            <li>.17xan</li>
+            <li>.18cn</li>
+
+            <li>.19cadsm</li>
+            <li>.20xin</li>
+            <li>.21casdn</li>
+            <li>.22cadm</li>
+            <li>.23xin</li>
+            <li>.24cn</li>
+
+            <li>.25com</li>
+            <li>.26xin</li>
+            <li>.27cn</li>
+            <li>.28com</li>
+            <li>.29xin</li>
+            <li>.30cn</li>
+
+            <li>.com</li>
+            <li>.xin</li>
+            <li>.cn</li>
+            <li>.com</li>
+            <li>.xin</li>
+            <li>.cnasdasd</li>
+
+            <li>.com</li>
+            <li>.xin</li>
+            <li>.cn</li>
+            <li>.com</li>
+            <li>.xin</li>
+            <li>.cn</li>
+
+            <li>.com</li>
+            <li>.xin</li>
+            <li>.cn</li>
+            <li>.com</li>
+            <li>.xin</li>
+            <li>.cnasdasd</li>
+
+            <li>.com</li>
+            <li>.xin</li>
+            <li>.cn</li>
+            <li>.com</li>
+            <li>.xin</li>
+            <li>.cn</li>
+
+            <li>.coasdasm</li>
+            <li>.xadsdsin</li>
+            <li>.casdasn</li>
+            <li>.casdasdom</li>
+            <li>.xdasdin</li>
+            <li>.666666dd</li>
+        </ul>
+    </div>
+
+
+</div>
+<!--dw-layout-0 end-->
+
+
+<!--dw-layout-1---------------------start-->
+<ul class="dw-layout-1">
+    <li class="layout name-list active">
+        <div class="layout-box">
+            <span class="list-radio">
+                <i class="icon iconfont icon-xuanze"></i>
+            </span>
+        </div>
+        <div class="list-v  layout-box3">
+            <p>adadasda.com</p>
+            <span>未注册</span>
+        </div>
+        <div class="list-money layout-box">
+            ￥55
+        </div>
+    </li>
+
+
+    <li class="layout name-list active">
+        <div class="layout-box">
+            <span class="list-radio">
+                <i class="icon iconfont icon-xuanze"></i>
+            </span>
+        </div>
+        <div class="list-v  layout-box3">
+            <p>adadasda.com</p>
+            <span>未注册</span>
+        </div>
+        <div class="list-money layout-box">
+            ￥55
+        </div>
+    </li>
+
+
+    <li class="layout name-list active">
+        <div class="layout-box">
+            <span class="list-radio">
+                <i class="icon iconfont icon-xuanze"></i>
+            </span>
+        </div>
+        <div class="list-v  layout-box3">
+            <p>adadasda.com</p>
+            <span>未注册</span>
+        </div>
+        <div class="list-money layout-box">
+            ￥55
+        </div>
+    </li>
+
+    <li class="layout name-list active">
+        <div class="layout-box">
+            <span class="list-radio">
+                <i class="icon iconfont icon-xuanze"></i>
+            </span>
+        </div>
+        <div class="list-v  layout-box3">
+            <p>adadasda.com</p>
+            <span>未注册</span>
+        </div>
+        <div class="list-money layout-box">
+            ￥55
+        </div>
+    </li>
+
+
+    <li class="layout name-list active">
+        <div class="layout-box">
+             <span class="list-radio">
+                <i class="icon iconfont icon-xuanze"></i>
+            </span>
+        </div>
+        <div class="list-v  layout-box3">
+            <p>adadasda.com</p>
+            <span>未注册</span>
+        </div>
+        <div class="list-money layout-box">
+            ￥55
+        </div>
+    </li>
+
+    <li class="layout name-list no-active">
+        <div class="layout-box">
+            <span class="list-radio">
+                <i class="icon iconfont icon-xuanze"></i>
+            </span>
+        </div>
+        <div class="list-v  layout-box3">
+            <p>adadasda.com</p>
+            <span>已注册</span>
+        </div>
+        <div class="list-money layout-box">
+            --
+        </div>
+    </li>
+
+
+    <li class="layout name-list active">
+        <div class="layout-box">
+             <span class="list-radio">
+                <i class="icon iconfont icon-xuanze"></i>
+            </span>
+        </div>
+        <div class="list-v  layout-box3">
+            <p>adadasda.com</p>
+            <span>未注册</span>
+        </div>
+        <div class="list-money layout-box">
+            ￥55
+        </div>
+    </li>
+
+
+    <li class="layout name-list active">
+        <div class="layout-box">
+             <span class="list-radio">
+                <i class="icon iconfont icon-xuanze"></i>
+            </span>
+        </div>
+        <div class="list-v  layout-box3">
+            <p>adadasda.com</p>
+            <span>未注册</span>
+        </div>
+        <div class="list-money layout-box">
+            ￥55
+        </div>
+    </li>
+
+
+</ul>
+<!--dw-layout-1---------------------end-->
+
+<div class="dw-layout-2 foot-domain-name">
+    <p>共 <span>0</span>个域名</p>
+    <button>立即注册</button>
+</div>
+
+</body>
+</html>

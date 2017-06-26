@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>高贝尔云首页</title>
+
+    <!--初始化css-->
+    <link rel="stylesheet" href="css/box.css">
+    <!--自定义css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--移动端轮播图css-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--阿里icon-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+    <!--屏幕检测，调整根html font-size大小，对屏幕模块进行等比缩放-->
+    <script>
+        (function (win) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            var tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 640) { // 最大宽度
+                    width = 640;
+                }
+                var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            win.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            refreshRem();
+
+        })(window);
+    </script>
+
+    <!--require.js 异步加载-->
+    <script src="js/require.js" defer async="true"></script>
+    <!--require.js 主模块main-->
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+
+<!--header-->
+<header class="ix-header">
+
+    <div class="clearfix hd-nav">
+
+        <a href="index.html" class="hd-logo">
+            <img src="images/logo1.png" alt="">
+        </a>
+
+        <a href="" class="hd-center">
+            高贝尔云
+        </a>
+
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=1063906&Menu=yes" class="hd-right">
+            <i class="icon iconfont icon-qq"></i>
+        </a>
+
+    </div>
+
+</header>
+<!--header end-->
+
+<!--slider-->
+<div class="slider">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+                <!--ix-product-list-->
+                <ul class="ix-product-list">
+                    <li>
+                        <a href="domain_name.html">
+                            <p>域名注册</p>
+                            <span>国内NO.1</span>
+                            <i class="icon iconfont icon-ziyuming"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="virtual_host.html">
+                            <p>虚拟主机</p>
+                            <span>稳定低成本</span>
+                            <i class="icon iconfont icon-xunizhuji"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="q_email.html">
+                            <p>企业邮箱</p>
+                            <span>安全稳固</span>
+                            <i class="icon iconfont icon-youxiang"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="domain_name.html">
+                            <p>云建站</p>
+                            <span>企业第一步</span>
+                            <i class="icon iconfont icon-wangluopinpaishu"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!--ix-product-list end-->
+
+            </div>
+            <div class="swiper-slide">
+
+                <!--ix-product-list-->
+                <ul class="ix-product-list">
+                    <li>
+                        <a href="">
+                            <p>更多产品</p>
+                            <span>点击查看</span>
+                            <i class="icon iconfont icon-gengduo"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="domain_name.html">
+                            <p>占位</p>
+                            <span>国内NO.1</span>
+                            <i class="icon iconfont icon-ziyuming"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="domain_name.html">
+                            <p>占位</p>
+                            <span>国内NO.1</span>
+                            <i class="icon iconfont icon-ziyuming"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="domain_name.html">
+                            <p>占位</p>
+                            <span>国内NO.1</span>
+                            <i class="icon iconfont icon-ziyuming"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!--ix-product-list end-->
+
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!--slider end-->
+
+<!--znews模块-->
+<div class="layout ix-layout-1">
+    <div class="layout-box box-left">
+        <a href=""><strong>NEWS<span>新闻</span></strong></a>
+    </div>
+    <div class="layout-box3 box-right">
+        <a href="">
+            <p class="title">2017年新智元开源.生态AIdasd adsad技术峰会</p>
+            <span>人工智能专家 2012-11-3</span>
+        </a>
+    </div>
+</div>
+<!--znews模块 end-->
+
+
+<!--云市场模块-->
+<div class="card-box ix-layout-2">
+
+    <div class="title clearfix">
+        <div class="fl-left">
+            <i class="icon iconfont icon-shichang1"></i>
+            <strong>云市场</strong>
+            <span>海量软件应用</span>
+        </div>
+        <div class="fl-right">
+            <a href="">
+                更多
+                <i class="icon iconfont icon-youjiantou1"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="layout-box">
+            <a href="">
+                <img src="images/ixview1.png" alt="">
+                <strong>基础软件</strong>
+                <span>多样选择</span>
+            </a>
+        </div>
+        <div class="layout-box">
+            <a href="">
+                <img src="images/ixview2.png" alt="">
+                <strong>网站建设</strong>
+                <span>快速建站</span>
+            </a>
+        </div>
+        <div class="layout-box">
+            <a href="">
+                <img src="images/ixview3.png" alt="">
+                <strong>服务与培训</strong>
+                <span>系统安全代维</span>
+            </a>
+        </div>
+        <div class="layout-box">
+            <a href="">
+                <img src="images/ixview4.png" alt="">
+                <strong>数据市场</strong>
+                <span>海量API</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<!--云市场模块 end-->
+
+<!--banner-->
+<div class="card-box">
+    <a href=""><img src="images/ixbanner.jpg" alt=""></a>
+</div>
+<!--banner end-->
+
+
+<!--解决方案模块-->
+<div class="card-box ix-layout-3">
+
+    <div class="title clearfix">
+        <div class="fl-left">
+            <i class="icon iconfont icon-fangan"></i>
+            <strong>解决方案</strong>
+            <span>您的需求，我来满足</span>
+        </div>
+        <div class="fl-right">
+            <a href="">
+                更多
+                <i class="icon iconfont icon-youjiantou1"></i>
+            </a>
+        </div>
+    </div>
+
+    <ul class="ix-tab-list3 layout">
+        <li class="layout-box active">电商</li>
+        <li class="layout-box">视频</li>
+    </ul>
+
+    <div class="ix-tab-dom3 active">
+        <div class="layout">
+            <div class="layout-box">
+                <a href="">
+                    <img src="images/ixview5.png" alt="">
+                    <strong>小型电商</strong>
+                    <span>多样选择</span>
+                </a>
+            </div>
+            <div class="layout-box">
+                <a href="">
+                    <img src="images/ixview6.png" alt="">
+                    <strong>中型电商</strong>
+                    <span>快速建站</span>
+                </a>
+            </div>
+            <div class="layout-box">
+                <a href="">
+                    <img src="images/ixview7.png" alt="">
+                    <strong>以图搜图</strong>
+                    <span>系统安全代维</span>
+                </a>
+            </div>
+            <div class="layout-box">
+                <a href="">
+                    <img src="images/ixview8.png" alt="">
+                    <strong>数据运营</strong>
+                    <span>海量API</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ix-tab-dom3">
+        <div class="layout">
+            <div class="layout-box">
+                <a href="">
+                    <img src="images/ixview9.png" alt="">
+                    <strong>视频直播</strong>
+                    <span>低延迟高并发</span>
+                </a>
+            </div>
+            <div class="layout-box">
+                <a href="">
+                    <img src="images/ixview10.png" alt="">
+                    <strong>视频点播</strong>
+                    <span>百万用户</span>
+                </a>
+            </div>
+            <div class="layout-box">
+                <a href="">
+                    <img src="images/ixview11.png" alt="">
+                    <strong>视频监控</strong>
+                    <span>系统安全代维</span>
+                </a>
+            </div>
+            <div class="layout-box">
+                <a href="">
+                    <img src="images/ixview12.png" alt="">
+                    <strong>视频导购</strong>
+                    <span>边看边买</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--解决方案模块 end-->
+
+
+<!--新闻模块-->
+<div class="card-box ix-layout-4">
+
+    <div class="title clearfix">
+        <div class="fl-left">
+            <i class="icon iconfont icon-xingxing"></i>
+            <strong>帮助中心</strong>
+        </div>
+    </div>
+
+    <div class="ix-news-box">
+        <a href="help_view.html">
+            <div class="news-title">
+                DataV带你回顾春节前后全国空气质量变化
+            </div>
+            <p>
+                春节假期结束了，大家在与家人亲戚欢聚的同时，不知道有没有留意春节期间的空气质量呢？没留意也没关系，下面就由DataV君带大家一起回顾下春节期间的空气质量变化吧。
+            </p>
+            <div class="category">
+                <span>机器学习</span>
+                <span>实践</span>
+                <span>算法</span>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+
+<div class="card-box ix-news-box">
+    <a href="help_view.html">
+        <div class="news-title">
+            DataV带你回顾春节前后全国空气质量变化
+        </div>
+        <p>
+            春节假期结束了，大家在与家人亲戚欢聚的同时，不知道有没有留意春节期间的空气质量呢？没留意也没关系，下面就由DataV君带大家一起回顾下春节期间的空气质量变化吧。
+        </p>
+        <div class="category">
+            <span>机器学习</span>
+            <span>实践</span>
+            <span>算法</span>
+        </div>
+    </a>
+</div>
+
+<div class="card-box ix-news-box">
+    <a href="help_view.html">
+        <div class="news-title">
+            DataV带你回顾春节前后全国空气质量变化
+        </div>
+        <p>
+            春节假期结束了，大家在与家人亲戚欢聚的同时，不知道有没有留意春节期间的空气质量呢？没留意也没关系，下面就由DataV君带大家一起回顾下春节期间的空气质量变化吧。
+        </p>
+        <div class="category">
+            <span>机器学习</span>
+            <span>实践</span>
+            <span>算法</span>
+        </div>
+    </a>
+</div>
+
+<!--新闻模块 end-->
+
+
+<!--footer -->
+<div id="footer-view">
+    <footer class="footer">
+
+        <a class="active" href="index.html">
+            <i class="icon iconfont icon-home"></i>
+            <p>高贝尔云</p>
+        </a>
+
+        <a href="console.html">
+            <i class="icon iconfont icon-yousuyun1"></i>
+            <p>控制台</p>
+        </a>
+
+        <a href="work_order.html">
+            <i class="icon iconfont icon-gongdan"></i>
+            <p>工单</p>
+        </a>
+
+        <a href="user.html">
+            <i class="icon iconfont icon-wo"></i>
+            <p>我的</p>
+        </a>
+
+    </footer>
+</div>
+<!--footer end-->
+
+</body>
+</html>

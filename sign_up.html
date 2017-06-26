@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>控制台 </title>
+
+    <!--初始化css-->
+    <link rel="stylesheet" href="css/box.css">
+    <!--自定义css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--移动端轮播图css-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--阿里icon-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+
+    <!--屏幕检测，调整根html font-size大小，对屏幕模块进行等比缩放-->
+    <script>
+        (function (win) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            var tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 640) { // 最大宽度
+                    width = 640;
+                }
+                var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            win.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            refreshRem();
+
+        })(window);
+    </script>
+
+    <!--require.js 异步加载-->
+    <script src="js/require.js" defer async="true"></script>
+    <!--require.js 主模块main-->
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+
+<!--header-->
+<header class="ix-header">
+
+    <div class="clearfix hd-nav">
+
+        <a href="index.html" class="hd-logo">
+            <img src="images/logo1.png" alt="">
+        </a>
+
+        <a href="" class="hd-center">
+            账户注册
+        </a>
+
+    </div>
+
+</header>
+<!--header end-->
+
+<!--sign-in-->
+<div class="sn-layout-0">
+
+    <form class="sign-view" action="">
+
+        <div class="view-input">
+            <label for="">会员名称：</label>
+            <input type="text">
+        </div>
+
+        <div class="view-input">
+            <label for="">登录密码：</label>
+            <input type="password">
+        </div>
+
+        <div class="view-input">
+            <label for="">密码确认：</label>
+            <input type="password">
+        </div>
+
+        <div class="view-input">
+            <label for="">手机号码：</label>
+            <input type="phone">
+        </div>
+
+        <div class="view-input">
+            <label for="">验证码：</label>
+            <input type="text">
+        </div>
+
+        <div class="view-input">
+            <label for="">短信验证码：</label>
+            <input type="text">
+        </div>
+
+        <div class="view-input">
+            <label for="">邮箱：</label>
+            <input type="text">
+        </div>
+
+        <div class="view-input">
+            <button class="submit-btn">确认</button>
+        </div>
+
+        <div class="view-input clearfix">
+            <a href="index.html" class="wj-a fl-left">返回首页</a>
+            <a href="sign_in.html" class="ze-a fl-right">返回登录</a>
+        </div>
+
+    </form>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>高贝尔云首页</title>
+
+    <!--初始化css-->
+    <link rel="stylesheet" href="css/box.css">
+    <!--自定义css-->
+    <link rel="stylesheet" href="css/public.css">
+    <!--移动端轮播图css-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--阿里icon-->
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+
+    <!--屏幕检测，调整根html font-size大小，对屏幕模块进行等比缩放-->
+    <script>
+        (function (win) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            var tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width > 640) { // 最大宽度
+                    width = 640;
+                }
+                var rem = width / 10; // 将屏幕宽度分成10份， 1份为1rem
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            win.addEventListener('resize', function () {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener('pageshow', function (e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            refreshRem();
+
+        })(window);
+    </script>
+
+    <!--require.js 异步加载-->
+    <script src="js/require.js" defer async="true"></script>
+    <!--require.js 主模块main-->
+    <script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+
+
+<!--header-->
+<header class="ix-header">
+
+    <div class="clearfix hd-nav">
+
+        <a href="javascript:window.history.back();" class="hd-left">
+            <i class="icon iconfont icon-xiangzuo1"></i>
+        </a>
+
+        <a href="" class="hd-center">
+            选择域名持有者
+        </a>
+
+        <a href="create_domain_name_information.html" class="hd-right hd-text-right">
+            创建新信息
+        </a>
+
+    </div>
+
+</header>
+<!--header end-->
+
+<!--dr-layer-0-->
+<div class="dr-layer-0 clearfix">
+    <span class="holder">
+      域名持有者
+    </span>
+    <a class="center-a" href="">
+        如何选择个人或企业
+    </a>
+    <span class="right-span fl-right">
+        个人
+        <i class="icon iconfont icon-jiantouyou"></i>
+    </span>
+</div>
+<!--dr-layer-0 end-->
+
+<p class="dr-banner-text-0">以下是您已认证信息，可以直接使用</p>
+
+<!--dr-layer-1-->
+<ul class="dr-layer-1">
+    <li class="layout name-list active">
+        <div class="layout-box">
+            <span class="list-radio active">
+                <i class="icon iconfont icon-xuanze"></i>
+            </span>
+        </div>
+        <div class="list-v layout-box4">
+            <div class="li-top">
+                <p class="name-z">测试名字</p>
+                <span class="name-y">Ceshi</span>
+                <span class="name-r">已认证</span>
+            </div>
+            <span class="li-bom">8381454542@qq.com</span>
+        </div>
+    </li>
+</ul>
+
+
+<div class="dr-layer-2 dr-foot-domain-name">
+    <p>点击确认持有者即视为阅读。理解并接受 <a href="">《域名在线服务条款》</a></p>
+    <button>确认持有者</button>
+</div>
+
+</body>
+</html>

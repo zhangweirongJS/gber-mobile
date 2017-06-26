@@ -1,0 +1,1299 @@
+@import "mob";
+
+/*virtual_host.html----------------------------start*/
+.vt-layer-0 {
+  position: relative;
+  @include toRem(padding, 25, 16, 25);
+  background: #FFFFFF;
+  .ecs-overview-left {
+    float: left;
+    i {
+      height: 60px/$ppr;
+      width: 60px/$ppr;
+      display: inline-block;
+      line-height: 60px/$ppr;
+      font-size: 50px/$ppr;
+      color: #00c1de;
+    }
+  }
+  .ecs-overview-right {
+    margin-left: 70px/$ppr;
+    .ecs-title {
+      font-size: 22px/$ppr;
+      color: #333;
+      line-height: 25px/$ppr;
+      font-weight: normal;
+    }
+    .ecs-subtitle {
+      font-size: 14px/$ppr;
+      color: #f04848;
+      line-height: 25px/$ppr;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      img {
+        float: left;
+        max-width: 15px/$ppr;
+        max-height: 20px/$ppr;
+      }
+      a {
+        color: #f04848;
+      }
+    }
+    .ecs-overview-desc {
+      font-size: 14px/$ppr;
+      color: #676c77;
+      line-height: .56rem;
+      padding-left: 0;
+    }
+  }
+}
+
+.vt-layout-1 {
+
+  .vt-tab-list1 {
+    border-bottom: 1px solid #f5f5f5;
+    li {
+      font-size: 14px;
+      text-align: center;
+      padding: 10px/$ppr;
+      &:nth-child(1) {
+        border-right: 1px solid #f5f5f5;
+      }
+    }
+    li.active {
+      background: #FFFFFF;
+      border-top: 2px solid #00C3DC;
+    }
+  }
+
+  .vt-tab-dom1 {
+    display: none;
+  }
+  .vt-tab-dom1.active {
+    display: block;
+  }
+
+  .config {
+    h3 {
+      @include toRem(padding, 10, 15);
+      font-size: 14px;
+      color: #333;
+      border-bottom: 1px #f1f1f1 solid;
+      font-weight: normal;
+    }
+  }
+
+  .content {
+    @include toRem(padding, 16, 15);
+    .ecs-tips {
+      @include toRem(padding, 10, 10);
+      background: #b7defe;
+      position: relative;
+      i {
+        display: block;
+        float: left;
+      }
+      .ecs-tips-text {
+        font-size: 14px/$ppr;
+        color: #333;
+        line-height: 20px/$ppr;
+        padding-left: 20px/$ppr;
+      }
+    }
+
+    .list {
+      background: #fff;
+      margin: 0;
+      position: relative;
+      .box {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        background-color: #f9f9f9;
+        border-bottom: 1px #fff solid;
+        .left {
+          width: 100%;
+          position: relative;
+          background-color: #f9f9f9;
+          @include toRem(padding, 20, 0, 20, 16);
+          .title-bar {
+            width: 100%;
+            overflow: hidden;
+            .product-type {
+              line-height: 22px/$ppr;
+              font-size: 16px/$ppr;
+              color: #333;
+              white-space: nowrap;
+              overflow: hidden;
+              font-weight: normal;
+            }
+
+            .sub-title-bar {
+              line-height: 22px/$ppr;
+              color: #8b8b8b;
+              font-size: 12px;
+              display: block;
+              overflow: hidden;
+            }
+          }
+          .config-desc {
+            font-size: 14px/$ppr;
+            color: #333;
+            line-height: 22px/$ppr;
+            width: 100%;
+          }
+        }
+
+        .right {
+          width: 91px/$ppr;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: #ededed;
+          .price-wrapper {
+            width: 100%;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            display: inline-table;
+            .price {
+              color: #333;
+              font-size: 12px;
+              line-height: 19px/$ppr;
+              height: 19px/$ppr;
+              overflow: hidden;
+              text-align: center;
+            }
+            .buy-button-text {
+              width: 55px/$ppr;
+              height: 28px/$ppr;
+              line-height: 28px/$ppr;
+              display: block;
+              font-size: 12px;
+              color: #fff;
+              background-color: #ff9000;
+              text-align: center;
+              @include toRem(margin, 2.5, 18);
+            }
+            .discount-txt {
+              margin-top: 5px/$ppr;
+              text-align: center;
+              font-size: 12px;
+              color: #00BFD6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.vt-layout-3 {
+
+  .vt-tab-list3 {
+    li {
+      font-size: 14px;
+      text-align: center;
+      padding: 10px/$ppr;
+      &:nth-child(1) {
+        border-right: 1px solid #f5f5f5;
+      }
+    }
+    li.active {
+      background: #FFFFFF;
+      border-top: 2px solid #00C3DC;
+    }
+  }
+
+  .vt-tab-dom3 {
+    display: none;
+  }
+  .vt-tab-dom3.one {
+    .advant-title {
+      padding: 0 16px/$ppr;
+      height: 28px/$ppr;
+      line-height: 28px/$ppr;
+      font-size: 14px/$ppr;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    .desc-text {
+      font-size: 14px/$ppr;
+      color: #000;
+      @include toRem(padding, 15, 16);
+      line-height: 25px/$ppr;
+    }
+    section {
+      @include toRem(padding, 10, 16);
+      border-bottom: 1px solid #f1f1f1;
+      .item-icon {
+        float: left;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      h5 {
+        padding-left: 10%;
+        font-size: 14px;
+      }
+      .content {
+        padding-left: 10%;
+        color: #000;
+        font-size: 14px;
+        line-height: 23px;
+      }
+    }
+
+    .app-title {
+      @include toRem(padding, 10, 16);
+      font-size: 12px;
+      background: #DDDDDB;
+    }
+    .product-table {
+      .product-li {
+        @include toRem(padding, 0, 15);
+        color: #666;
+        font-size: 12px;
+        .product-low-list {
+          width: 100%;
+          display: flex;
+          border-bottom: 1px #ddd solid;
+          .product-low-item {
+            flex: 1;
+            position: relative;
+            line-height: 1rem;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+  .vt-tab-dom3.active {
+    display: block;
+  }
+
+}
+
+/*virtual_host.html----------------------------end*/
+
+/*virtual_select_config ------------------ start*/
+.vg-layer-0 {
+  background: #FFFFFF;
+  .wrapper {
+    .line-row {
+      width: 87.5%;
+      margin: 0 auto;
+      .product-info {
+        padding-top: 19px/$ppr;
+        .info-tit {
+          color: #000;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px/$ppr;
+          padding: 0 6px;
+        }
+        .info-list {
+          padding-top: 10px/$ppr;
+          padding-bottom: 16px/$ppr;
+          overflow: hidden;
+          .info-item, li {
+            color: #000;
+            font-size: 14px;
+            line-height: 21px/$ppr;
+            position: relative;
+            @include toRem(padding, 0, 6);
+          }
+        }
+      }
+    }
+
+    .button-wrapper {
+      .line-tit {
+        background: #f1f1f1;
+        height: 44px/$ppr;
+        line-height: 44px/$ppr;
+        width: 100%;
+      }
+      .button-list {
+        padding-top: 20px/$ppr;
+        padding-bottom: 11px/$ppr;
+        overflow: hidden;
+        list-style: none;
+        min-height: 32px/$ppr;
+        li {
+          width: 33%;
+          float: left;
+          margin-bottom: 10px/$ppr;
+          span {
+            height: 32px/$ppr;
+            display: block;
+            @include toRem(margin, 0, 5);
+            padding: 1px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+            color: #8b8b8b;
+            font-size: 12px;
+            line-height: 32px/$ppr;
+            text-align: center;
+          }
+        }
+        li.current span {
+          padding: 0;
+          border: 2px solid #00c1de;
+          color: #00a2ca;
+          background: #eafbfe;
+        }
+      }
+    }
+
+    .select-row {
+      .line-tit {
+        background: #f1f1f1;
+        height: 44px/$ppr;
+        line-height: 44px/$ppr;
+        width: 100%;
+      }
+      .select-tip {
+        color: #f60;
+        font-size: 12px;
+        margin-top: 20px/$ppr;
+        margin-bottom: 5px/$ppr;
+        overflow: hidden;
+      }
+
+      .select-box,
+      .select-box-v2 {
+        overflow: hidden;
+        padding-bottom: 20px/$ppr;
+        position: relative;
+      }
+
+      .select-blank,
+      .select-box select {
+        display: block;
+        width: 100%;
+        color: #000;
+        font-size: 12px;
+        height: 34px/$ppr;
+        line-height: 34px/$ppr;
+        -webkit-appearance: listbox;
+        text-decoration: none;
+        padding-left: 10px/$ppr;
+        outline: 0;
+      }
+
+      .select-box:after {
+        content: "";
+        top: 12px/$ppr;
+        right: 9px/$ppr;
+        position: absolute;
+        display: inline-block;
+        font-size: 0;
+        border-top: 2px solid #666;
+        border-left: 2px solid #666;
+        width: 6px/$ppr;
+        height: 6px/$ppr;
+        background-color: transparent;
+        -webkit-transform: rotate(225deg);
+      }
+
+      .select-box select {
+        border-radius: 0;
+      }
+    }
+
+    .bor-top {
+      border-top: 1px solid #ebebeb;
+      padding-bottom: 10px/$ppr;
+    }
+
+    .price {
+      font-size: 15px;
+      color: #000;
+      padding-top: 20px/$ppr;
+      .price-money {
+        display: block;
+        margin-bottom: 6px/$ppr;
+        color: #f60;
+        span {
+          color: #f60;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .rule-content {
+      font-size: 12px;
+      width: 87.5%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.vg-layout-1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  @include bor-top(#EDEDED);
+  background: #fff;
+  @include toRem(padding, 15);
+  a {
+    width: 100%;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+    background: #00C1DE;
+    color: #fff;
+    border: none;
+    &:hover {
+      background: #00C1DE;
+    }
+  }
+}
+
+/*virtual_select_config ------------------ end*/
+
+/*virtual_pay.html ------------------------ start*/
+.vy-layer-0.order-item {
+  background-color: #fff;
+  .header {
+    background-color: #F5F5F5;
+    @include toRem(padding, 15, 17);
+    h3 {
+      font-size: 14px;
+      color: #999BA4;
+    }
+  }
+  .config-list {
+    @include toRem(padding, 15, 17);
+    .key {
+      display: inline-block;
+      min-width: 100px/$ppr;
+      line-height: 20px/$ppr;
+      color: #999BA4;
+      font-size: 14px;
+    }
+    .value {
+      color: #333;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+  }
+}
+
+.vy-layer-1 {
+  .formular {
+    position: relative;
+    background-color: #FFF;
+    @include toRem(margin, 10, 0);
+    width: 100%;
+    bottom: 0;
+    @include toRem(padding, 16);
+    overflow: hidden;
+    .cell {
+      display: block;
+      overflow: hidden;
+      line-height: 28px/$ppr;
+      .key {
+        font-size: 12px;
+        color: #999BA4;
+        float: left;
+      }
+      .value {
+        color: #333;
+        text-align: right;
+        font-size: 12px;
+        padding-top: 3px/$ppr;
+        float: right;
+      }
+      .symbol {
+        float: right;
+        margin-right: 5px/$ppr;
+      }
+    }
+    .row-line {
+      border-bottom: 1px solid #DCDEE3;
+      @include toRem(margin, 5, 0);
+      width: 100%;
+    }
+  }
+}
+
+.vy-layer-2.price-confirm {
+  @include toRem(padding, 12.5, 8, 8, 8);
+  background: #FFFFFF;
+  .price-show {
+    border-bottom: 1px solid #EDEDED;
+    margin-bottom: 11px/$ppr;
+    padding-bottom: 11px/$ppr;
+    h3 {
+      padding-left: 3px/$ppr;
+      color: #999BA4;
+      font-size: 12px;
+    }
+    p {
+      margin-top: 5px/$ppr;
+      color: #F44336;
+      font-size: 16px;
+    }
+  }
+
+  .order_form input[type=submit] {
+    width: 100%;
+    font-size: 14px/$ppr;
+    line-height: 50px/$ppr;
+    height: 50px/$ppr;
+    background-color: #ff8b3d;
+    border-radius: 0;
+    color: #fff;
+    text-align: center;
+    border: none;
+    outline: 0;
+  }
+}
+
+/*virtual_pay.html ------------------------ end*/
+
+/*q_email --------------------------------start*/
+.ql-layout-0 {
+  position: relative;
+  @include toRem(padding, 25, 16, 25);
+  background: #FFFFFF;
+  .ecs-overview-left {
+    float: left;
+    i {
+      height: 60px/$ppr;
+      width: 60px/$ppr;
+      display: inline-block;
+      line-height: 60px/$ppr;
+      font-size: 50px/$ppr;
+      color: #00c1de;
+    }
+  }
+  .ecs-overview-right {
+    margin-left: 70px/$ppr;
+    .ecs-title {
+      font-size: 22px/$ppr;
+      color: #333;
+      line-height: 25px/$ppr;
+      font-weight: normal;
+    }
+    .ecs-subtitle {
+      font-size: 14px/$ppr;
+      color: #f04848;
+      line-height: 25px/$ppr;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      img {
+        float: left;
+        max-width: 15px/$ppr;
+        max-height: 20px/$ppr;
+      }
+      a {
+        color: #f04848;
+      }
+    }
+    .ecs-overview-desc {
+      font-size: 14px/$ppr;
+      color: #676c77;
+      line-height: .56rem;
+      padding-left: 0;
+    }
+  }
+}
+
+.ql-layout-1 {
+  .config {
+    h3 {
+      @include toRem(padding, 10, 15);
+      font-size: 14px;
+      color: #333;
+      border-bottom: 1px #f1f1f1 solid;
+      font-weight: normal;
+    }
+  }
+
+  .content {
+    @include toRem(padding, 16, 15);
+    .ecs-tips {
+      @include toRem(padding, 10, 10);
+      background: #b7defe;
+      position: relative;
+      i {
+        display: block;
+        float: left;
+      }
+      .ecs-tips-text {
+        font-size: 14px/$ppr;
+        color: #333;
+        line-height: 20px/$ppr;
+        padding-left: 20px/$ppr;
+      }
+    }
+
+    .list {
+      background: #fff;
+      margin: 0;
+      position: relative;
+      .box {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        background-color: #f9f9f9;
+        border-bottom: 1px #fff solid;
+        .left {
+          width: 100%;
+          position: relative;
+          background-color: #f9f9f9;
+          @include toRem(padding, 20, 0, 20, 16);
+          .title-bar {
+            width: 100%;
+            height: 25px/$ppr;
+            overflow: hidden;
+            .product-type {
+              height: 22px/$ppr;
+              max-width: 90px/$ppr;
+              line-height: 22px/$ppr;
+              font-size: 16px/$ppr;
+              color: #333;
+              white-space: nowrap;
+              float: left;
+              overflow: hidden;
+              font-weight: normal;
+            }
+
+            .sub-title-bar {
+              height: 17px/$ppr;
+              line-height: 22px/$ppr;
+              width: 130px/$ppr;
+              margin-left: 5px;
+              color: #8b8b8b;
+              font-size: 12px;
+              display: inline-block;
+              overflow: hidden;
+              float: left;
+            }
+          }
+          .config-desc {
+            font-size: 14px/$ppr;
+            color: #333;
+            line-height: 22px/$ppr;
+            width: 100%;
+          }
+        }
+
+        .right {
+          width: 91px/$ppr;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: #ededed;
+          .price-wrapper {
+            width: 100%;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            display: inline-table;
+            .price {
+              color: #333;
+              font-size: 12px;
+              line-height: 19px/$ppr;
+              height: 19px/$ppr;
+              overflow: hidden;
+              text-align: center;
+            }
+            .buy-button-text {
+              width: 55px/$ppr;
+              height: 28px/$ppr;
+              line-height: 28px/$ppr;
+              display: block;
+              font-size: 12px;
+              color: #fff;
+              background-color: #ff9000;
+              text-align: center;
+              @include toRem(margin, 2.5, 18);
+            }
+            .discount-txt {
+              margin-top: 5px/$ppr;
+              text-align: center;
+              font-size: 12px;
+              color: #00BFD6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ql-layout-3 {
+
+  .ql-tab-list3 {
+    li {
+      font-size: 14px;
+      text-align: center;
+      padding: 10px/$ppr;
+      &:nth-child(1) {
+        border-right: 1px solid #f5f5f5;
+      }
+    }
+    li.active {
+      background: #FFFFFF;
+      border-top: 2px solid #00C3DC;
+    }
+  }
+
+  .ql-tab-dom3 {
+    display: none;
+  }
+  .ql-tab-dom3.one {
+    .advant-title {
+      padding: 0 16px/$ppr;
+      height: 28px/$ppr;
+      line-height: 28px/$ppr;
+      font-size: 14px/$ppr;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    .desc-text {
+      font-size: 14px/$ppr;
+      color: #000;
+      @include toRem(padding, 15, 16);
+      line-height: 25px/$ppr;
+    }
+    section {
+      @include toRem(padding, 10, 16);
+      border-bottom: 1px solid #f1f1f1;
+      .item-icon {
+        float: left;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      h5 {
+        padding-left: 10%;
+        font-size: 14px;
+      }
+      .content {
+        padding-left: 10%;
+        color: #000;
+        font-size: 14px;
+        line-height: 23px;
+      }
+    }
+
+    .app-title {
+      @include toRem(padding, 10, 16);
+      font-size: 12px;
+      background: #DDDDDB;
+    }
+    .product-table {
+      .product-li {
+        @include toRem(padding, 0, 15);
+        color: #666;
+        font-size: 12px;
+        .product-low-list {
+          width: 100%;
+          display: flex;
+          border-bottom: 1px #ddd solid;
+          .product-low-item {
+            flex: 1;
+            position: relative;
+            line-height: 1rem;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+  .ql-tab-dom3.active {
+    display: block;
+  }
+
+}
+
+/*q_email --------------------------------end*/
+
+/*q_email_config.html --------------------------------start*/
+
+.qg-layout-0 {
+  background: #FFFFFF;
+  .wrapper {
+    .line-row {
+      width: 87.5%;
+      margin: 0 auto;
+      .product-info {
+        padding-top: 19px/$ppr;
+        .info-tit {
+          color: #000;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px/$ppr;
+          padding: 0 6px;
+        }
+        .info-list {
+          padding-top: 10px/$ppr;
+          padding-bottom: 16px/$ppr;
+          overflow: hidden;
+          .info-item, li {
+            color: #000;
+            font-size: 14px;
+            line-height: 21px/$ppr;
+            position: relative;
+            @include toRem(padding, 0, 6);
+          }
+        }
+
+      }
+    }
+
+    .button-wrapper {
+      .line-tit {
+        background: #f1f1f1;
+        height: 44px/$ppr;
+        line-height: 44px/$ppr;
+        width: 100%;
+      }
+
+      .select-tip {
+        color: #f60;
+        font-size: 12px;
+        margin-top: 20px/$ppr;
+        margin-bottom: 5px/$ppr;
+        overflow: hidden;
+      }
+
+      .number-box {
+        padding: 0 0 20px/$ppr;
+        .number-decrease {
+          margin-right: 10px/$ppr;
+        }
+        .number-increase {
+          margin-left: 10px/$ppr;
+        }
+        .number-decrease,
+        .number-increase {
+          display: inline-block;
+          width: 8%;
+          font-size: 34px;
+          line-height: 34px/$ppr;
+          vertical-align: middle;
+          text-align: center;
+        }
+        .number-input {
+          box-sizing: border-box;
+          width: 15%;
+          padding: 10px/$ppr;
+          border: 1px solid #a6a6a6;
+          background-color: #f8f8f8;
+          -moz-appearance: textfield;
+          border-radius: 0;
+        }
+      }
+
+      .button-list {
+        padding-top: 20px/$ppr;
+        padding-bottom: 11px/$ppr;
+        overflow: hidden;
+        list-style: none;
+        min-height: 32px/$ppr;
+        li {
+          width: 33%;
+          float: left;
+          margin-bottom: 10px/$ppr;
+          span {
+            height: 32px/$ppr;
+            display: block;
+            @include toRem(margin, 0, 5);
+            padding: 1px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+            color: #8b8b8b;
+            font-size: 12px;
+            line-height: 32px/$ppr;
+            text-align: center;
+          }
+        }
+        li.current span {
+          padding: 0;
+          border: 2px solid #00c1de;
+          color: #00a2ca;
+          background: #eafbfe;
+        }
+      }
+    }
+
+    .select-row {
+      .line-tit {
+        background: #f1f1f1;
+        height: 44px/$ppr;
+        line-height: 44px/$ppr;
+        width: 100%;
+      }
+      .select-tip {
+        color: #f60;
+        font-size: 12px;
+        margin-top: 20px/$ppr;
+        margin-bottom: 5px/$ppr;
+        overflow: hidden;
+      }
+
+      .domain-box {
+        padding: 0 0 20px/$ppr;
+        .domain-prefix {
+          display: inline-block;
+          width: 8%;
+          font-size: 20px/$ppr;
+          vertical-align: middle;
+        }
+        .domain-input {
+          box-sizing: border-box;
+          width: 60%;
+          padding: 10px/$ppr;
+          border: 1px solid #a6a6a6;
+          background-color: #f8f8f8;
+          border-radius: 0;
+        }
+      }
+      .select-box,
+      .select-box-v2 {
+        overflow: hidden;
+        padding-bottom: 20px/$ppr;
+        position: relative;
+      }
+
+      .select-blank,
+      .select-box select {
+        display: block;
+        width: 100%;
+        color: #000;
+        font-size: 12px;
+        height: 34px/$ppr;
+        line-height: 34px/$ppr;
+        -webkit-appearance: listbox;
+        text-decoration: none;
+        padding-left: 10px/$ppr;
+        outline: 0;
+      }
+
+      .select-blank {
+        background-color: #f8f8f8;
+        border: 1px solid #a6a6a6;
+        box-sizing: border-box;
+      }
+
+      .select-box:after {
+        content: "";
+        top: 12px/$ppr;
+        right: 9px/$ppr;
+        position: absolute;
+        display: inline-block;
+        font-size: 0;
+        border-top: 2px solid #666;
+        border-left: 2px solid #666;
+        width: 6px/$ppr;
+        height: 6px/$ppr;
+        background-color: transparent;
+        -webkit-transform: rotate(225deg);
+      }
+
+      .select-box select {
+        border-radius: 0;
+      }
+    }
+
+    .bor-top {
+      border-top: 1px solid #ebebeb;
+      padding-bottom: 10px/$ppr;
+    }
+
+    .price {
+      font-size: 15px;
+      color: #000;
+      padding-top: 20px/$ppr;
+      .price-money {
+        display: block;
+        margin-bottom: 6px/$ppr;
+        color: #f60;
+        span {
+          color: #f60;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .rule-content {
+      font-size: 12px;
+      width: 87.5%;
+      margin: 0 auto;
+    }
+  }
+}
+
+/*q_email_config.html --------------------------------end*/
+
+/*q_email_pay.html --------------------------------start*/
+.qy-layer-0.order-item {
+  background-color: #fff;
+  .header {
+    background-color: #F5F5F5;
+    @include toRem(padding, 15, 17);
+    h3 {
+      font-size: 14px;
+      color: #999BA4;
+    }
+  }
+  .config-list {
+    @include toRem(padding, 15, 17);
+    .key {
+      display: inline-block;
+      min-width: 100px/$ppr;
+      line-height: 20px/$ppr;
+      color: #999BA4;
+      font-size: 14px;
+    }
+    .value {
+      color: #333;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+  }
+}
+
+.qy-layer-1 {
+  .formular {
+    position: relative;
+    background-color: #FFF;
+    @include toRem(margin, 10, 0);
+    width: 100%;
+    bottom: 0;
+    @include toRem(padding, 16);
+    overflow: hidden;
+    .cell {
+      display: block;
+      overflow: hidden;
+      line-height: 28px/$ppr;
+      .key {
+        font-size: 12px;
+        color: #999BA4;
+        float: left;
+      }
+      .value {
+        color: #333;
+        text-align: right;
+        font-size: 12px;
+        padding-top: 3px/$ppr;
+        float: right;
+      }
+      .symbol {
+        float: right;
+        margin-right: 5px/$ppr;
+      }
+    }
+    .row-line {
+      border-bottom: 1px solid #DCDEE3;
+      @include toRem(margin, 5, 0);
+      width: 100%;
+    }
+  }
+}
+
+.qy-layer-2.price-confirm {
+  @include toRem(padding, 12.5, 8, 8, 8);
+  background: #FFFFFF;
+  .price-show {
+    border-bottom: 1px solid #EDEDED;
+    margin-bottom: 11px/$ppr;
+    padding-bottom: 11px/$ppr;
+    h3 {
+      padding-left: 3px/$ppr;
+      color: #999BA4;
+      font-size: 12px;
+    }
+    p {
+      margin-top: 5px/$ppr;
+      color: #F44336;
+      font-size: 16px;
+    }
+  }
+
+  .order_form input[type=submit] {
+    width: 100%;
+    font-size: 14px/$ppr;
+    line-height: 50px/$ppr;
+    height: 50px/$ppr;
+    background-color: #ff8b3d;
+    border-radius: 0;
+    color: #fff;
+    text-align: center;
+    border: none;
+    outline: 0;
+  }
+}
+
+/*q_email_pay.html --------------------------------end*/
+
+/*help_view.html --------------------------------start*/
+.hw-layout-0 {
+  background: #FFFFFF;
+  .tit {
+    font-size: 18px;
+    @include toRem(padding, 15);
+  }
+  .gs {
+    padding-left: 15px/$ppr;
+    font-size: 14px;
+    color: #00BFD6;
+  }
+  .text-content {
+    @include toRem(padding, 15);
+  }
+}
+
+/*help_view.html --------------------------------end*/
+
+/*sign_in.html --------------------------------start*/
+.sn-layout-0 {
+  @include toRem(padding, 15);
+  background: #FFFFFF;
+  .sign-view {
+    .view-input {
+      margin-top: 15px/$ppr;
+      label {
+        display: block;
+        padding-bottom: 10px/$ppr;
+        font-size: 12px;
+        color: #666666;
+      }
+      input {
+        display: block;
+        width: 100%;
+        height: 35px/$ppr;
+        border: 1px solid #DDDDDB;
+        padding: 0 10px/$ppr;
+      }
+      .submit-btn {
+        width: 100%;
+        height: 35px/$ppr;
+        background: #00BFD6;
+        border: none;
+        color: #FFFFFF;
+        &:hover {
+          background: #00a2ca;
+        }
+      }
+      .beizhu {
+        font-size: 12px;
+        color: #FD482C;
+        padding-bottom: 15px/$ppr;
+        display: block;
+      }
+      .wj-a,
+      .ze-a {
+        font-size: 12px;
+        color: #00BFD6;
+        &:hover {
+          color: #00a2ca;
+        }
+      }
+    }
+  }
+}
+
+/*sign_in.html --------------------------------end*/
+
+/*work_order_create.html -------------------------- start*/
+.we-layout-0.aside-list {
+  background: #FFFFFF;
+  .fl-layout-box3 {
+    a {
+      text-align: center;
+      display: block;
+      border-right: 1px solid #ECECEC;
+      border-bottom: 1px solid #ECECEC;
+      height: 100px/$ppr;
+      line-height: 100px/$ppr;
+      font-size: 14px;
+      color: #00BFD6;
+      &:hover {
+        background: #f1f1f1;
+        color: #00a2c9;
+      }
+    }
+  }
+}
+
+/*work_order_create.html -------------------------- end*/
+
+/*work_order_create_view.html -------------------------- start*/
+.ww-layout-0 {
+  background: #FFFFFF;
+  .tit {
+    @include bor-bom(#EDEDED);
+    @include toRem(padding, 10, 15);
+    display: block;
+    span {
+      display: block;
+      font-size: 14px;
+      color: #999;
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .description {
+    @include toRem(padding, 10, 15);
+    @include bor-bom(#EDEDED);
+    .dn {
+      display: block;
+      font-size: 14px;
+      padding-bottom: 5px/$ppr;
+      color: #999;
+    }
+    textarea {
+      width: 100%;
+      height: 150px/$ppr;
+      border: 1px solid #EDEDED;
+    }
+  }
+  .yewu,
+  .phone,
+  .email {
+    @include toRem(padding, 10, 15);
+    @include bor-bom(#EDEDED);
+    label {
+      font-size: 14px;
+      color: #999999;
+    }
+    input {
+      padding: 5px 8px;
+      margin-left: 8px;
+      border: none;
+    }
+  }
+
+  .upload {
+    @include toRem(padding, 10, 15);
+    @include bor-bom(#EDEDED);
+  }
+
+}
+
+/*work_order_create_view.html -------------------------- end*/
